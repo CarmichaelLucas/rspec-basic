@@ -6,7 +6,6 @@ services:
       dockerfile: ./docker/rspec.dockerfile
       context: .
     image: lucas/rspec
-    working_dir: /usr/src/app/spec
     volumes:
       - ./:/usr/src/app
     stdin_open: true
