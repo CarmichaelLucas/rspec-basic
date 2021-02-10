@@ -1,5 +1,5 @@
 class Calculator
   def sum(*array)
-    array.reduce { |number, prox| number + prox }
+    array.reduce { |soma, number| soma + number }
   end
 end
