@@ -18,6 +18,21 @@ require_relative './helpers/helper'
 
 RSpec.configure do |config|
 
+# Hooks 
+# :suite => roda antes/depois da suite de todos os testes
+# :all/:context => roda antes/depois de todos os testes
+# :each/:example => roda antes/depois de cada teste
+
+#  config.before(:suite) { puts 'ANTES da SUITE de TODOS os testes' }
+#  config.after(:suite) { puts 'DEPOIS da SUITE de TODOS os testes' }
+#
+#  config.before(:all) { puts 'ANTES de TODOS os testes' }
+#  config.after(:all) { puts 'DEPOIS de TODOS os testes' }
+#
+#  config.before(:each) { puts 'ANTES de CADA teste' }
+#  config.after(:each) { puts 'DEPOIS de CADA teste' }
+
+  # Helper Methods de Módulo
   config.include Helper
 
   # rspec-expectations config goes here. You can use an alternate
