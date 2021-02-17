@@ -1,7 +1,13 @@
+RSpec::Matchers.define_negated_matcher :exclude, :include
+
 describe 'Array' do
 
   it '#include' do
     expect([1,2,3,5,4]).to include(5, 1)  
+  end
+
+  it '#excude' do
+    expect([1,2,3,5,4]).to exclude(0)
   end
 
   it '#match_array' do

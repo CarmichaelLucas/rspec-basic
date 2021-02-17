@@ -18,6 +18,8 @@ require_relative './helpers/helper'
 
 RSpec.configure do |config|
 
+config.define_derived_metadata { |meta| meta[:aggregate_failures] = true }
+
 # Hooks 
 # :suite => roda antes/depois da suite de todos os testes
 # :all/:context => roda antes/depois de todos os testes
