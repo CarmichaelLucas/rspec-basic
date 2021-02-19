@@ -1,12 +1,12 @@
 RSpec::Matchers.define_negated_matcher :exclude, :include
 
-describe 'Array' do
+describe 'Array', type: 'collection' do
 
   it '#include' do
     expect([1,2,3,5,4]).to include(5, 1)  
   end
 
-  it '#excude' do
+  it '#excude', :slow do
     expect([1,2,3,5,4]).to exclude(0)
   end
 
