@@ -18,5 +18,11 @@ describe 'Test Double' do
     puts pessoa.name
   end
   
+  it '#as_null_object', :test do
+    user = double('User').as_null_object    
+    allow(user).to receive(:name).and_return('Lucas')
+
+    user.fulano
+  end
 
 end

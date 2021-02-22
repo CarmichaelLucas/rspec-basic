@@ -4,4 +4,12 @@ class Student
   def has_finished?(course)
     # return true or false
   end
+
+  def foo(arg)
+    # return 
+  end
+
+  def bar
+    # return 
+  end
 end
